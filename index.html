@@ -6,14 +6,19 @@
 <title>Flamingo Grill</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: white;
-  text-align: center;
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
+@media (min-width: 768px) {
+  .menu-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 header {
   background: linear-gradient(135deg, #ff6b2d, #ff2d55);
   padding: 60px 20px;
