@@ -16,6 +16,52 @@
   .menu-item {
   color: #ffffff;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  padding: 15px 30px;
+}
+.menu-categories {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background: #1a1a1a;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.menu-categories a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-categories a:hover {
+  color: #ff6b2d;
+}  
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff6b2d;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #ff6b2d;
+}  
 @media (min-width: 768px) {
   .menu-grid {
     grid-template-columns: 1fr 1fr;
@@ -62,8 +108,14 @@ a.button {
 </head>
 
 <body>
-
-  
+<nav class="navbar">
+  <div class="logo">🔥 Flamingo Grill</div>
+  <ul class="nav-links">
+    <li><a href="#">Hem</a></li>
+    <li><a href="#meny">Meny</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+</nav>  
   <header>
   <h1>🔥 Flamingo Grill 🔥</h1>
   <p>Burgare & Middle Eastern Wraps</p>
@@ -72,6 +124,13 @@ a.button {
 <section>
   <h2>🍔 Meny</h2>
 
+<div class="menu-categories">
+  <a href="#burgare">Burgare</a>
+  <a href="#menyburgare">Burgare Meny</a>
+  <a href="#wraps">Wraps</a>
+  <a href="#sides">Sides</a>
+</div>
+  
   <div class="menu-grid">
 
     <div class="box">
