@@ -32,6 +32,41 @@
   margin-bottom: 20px;
 }
 
+  .hero {
+  height: 60vh;
+  background-image: url("DIN-BILD-LÄNK-HÄR");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #ff6b2d;
+}
+  
 .menu-categories a {
   color: white;
   text-decoration: none;
@@ -116,6 +151,14 @@ a.button {
     <li><a href="#kontakt">Kontakt</a></li>
   </ul>
 </nav>  
+  
+  <section class="hero">
+  <div class="hero-content">
+    <h1>Välkommen till Flamingo Grill</h1>
+    <p>Smashburgare & Middle Eastern wraps</p>
+  </div>
+    
+</section>
   <header>
   <h1>🔥Flamingo Grill🔥</h1>
   <p>Burgare & Middle Eastern Wraps</p>
