@@ -13,8 +13,19 @@
   max-width: 900px;
   margin: auto;
 }
-  .menu-item {
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px dotted #444;
   color: #ffffff;
+  flex-wrap: wrap;
+}
+
+.menu-item span {
+  word-break: break-word;
 }
 .navbar {
   display: flex;
