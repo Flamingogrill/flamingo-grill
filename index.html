@@ -6,6 +6,27 @@
 <title>Flamingo Grill</title>
 
 <style>
+  .order-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff6b2d;
+  color: white;
+  padding: 15px 22px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  z-index: 999;
+  transition: 0.3s ease;
+}
+
+.order-button:hover {
+  background: #2df1ff;
+  color: black;
+  transform: scale(1.05);
+}
+  
   .contact-info a {
   color: #2df1ff;
   text-decoration: none;
@@ -872,5 +893,8 @@ a.button {
 <footer class="footer">
   <p>©️ 2026 Flamingo Grill – Mariehamn, Åland</p>
 </footer>    
+   <a href="tel:04575392162" class="order-button">
+  🍔 Beställ nu
+</a>    
 </body>
 </html>
